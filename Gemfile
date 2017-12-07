@@ -7,3 +7,6 @@ gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 gem "jquery-middleman"
 gem 'rack-contrib'
 gem 'puma'
+gem 'rake'
+gem 'foreman'
+gem 'figaro'
