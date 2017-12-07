@@ -1,16 +1,59 @@
 <!doctype html>
 <html>
   <head>
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <meta property="og:title" content="Lucia Mkhitarova | Front-End Developer">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="Lucia Mkhitarova">
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
+    <link href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:300,400,600,700|PT+Serif:400,700" rel="stylesheet">
   </head>
   <body>
-    <%= yield %>
+<!--     <div class="navbar">
+      <%= link_to "About Me", '/about.html', class: "navbar-link" %>
+      <%= link_to "Projects", '/projects.html', class: "navbar-link" %>
+    </div> -->
+    <div id="sideNavigation" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <%= link_to "About Me", '/about.html', class: "navbar-link" %>
+      <%= link_to "Projects", '/projects.html', class: "navbar-link" %>
+    </div>
+
+    <nav class="topnav">
+      <a href="#" onclick="openNav()">
+        <svg width="30" height="30" id="icoOpen">
+ <!--            <path d="M0,5 30,5" stroke="rgba(0,0,0,0.6)" stroke-width="1"/>
+            <path d="M0,14 30,14" stroke="rgba(0,0,0,0.6)" stroke-width="1"/>
+            <path d="M0,23 30,23" stroke="rgba(0,0,0,0.6)" stroke-width="1"/> -->
+            <path d="M0,15 30, 15" stroke="rgba(0,0,0,0.6)" stroke-width="2"/>
+            <path d="M15,0 15, 30" stroke="rgba(0,0,0,0.6)" stroke-width="2"></path>
+        </svg>
+      </a>
+    </nav>
+
+    <div id="main">
+      <%= yield %>
+    </div>
+
+
+    <script>
+      function openNav() {
+          document.getElementById("sideNavigation").style.width = "250px";
+          document.getElementById("main").style.marginRight = "250px";
+      }
+
+      function closeNav() {
+          document.getElementById("sideNavigation").style.width = "0px";
+          document.getElementById("main").style.marginRight = "0px";
+      }
+    </script>
   </body>
 </html>
