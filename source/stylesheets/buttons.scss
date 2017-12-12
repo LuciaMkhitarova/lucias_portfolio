@@ -1,0 +1,21 @@
+.home-button a {
+  background-color: white;
+  font-size: 3em;
+  font-family: 'Open Sans', 'sans-serif';
+  float: right;
+  /* height: 5em; */
+  /* width: 5em; */
+  overflow: hidden;
+  font-weight: lighter;
+  padding: .35em;
+  color: black;
+  transition: .5s ease;
+  &:hover {
+    color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+
+.contact-button {
+
+}
