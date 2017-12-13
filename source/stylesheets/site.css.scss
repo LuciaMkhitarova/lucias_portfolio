@@ -3,6 +3,8 @@
 @import 'scroll.scss';
 @import 'buttons.scss';
 @import 'keyframes.scss';
+@import 'projects.scss';
+@import 'footer.scss';
 
 html { font-size: 100%; }
 
@@ -36,8 +38,4 @@ p {
   font-weight: 300;
   font-size: 2em;
   margin: 0px;
-}
-
-.footer {
-  height: 10em;
 }

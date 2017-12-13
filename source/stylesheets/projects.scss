@@ -1,0 +1,40 @@
+.projects-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  p {
+    margin-bottom: 0 !important;
+  }
+}
+
+.project-item {
+  text-align: center;
+}
+
+.project-card {
+  width: 70em;
+  overflow: hidden;
+  transition: transform .5s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4em;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &--inverted:hover {
+    transform: scale(.96);
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .8s ease;
+  }
+  &--inverted {
+    transition: transform .5s ease;
+  }
+  &:hover img {
+    transform: scale(1.15);
+  }
+}
