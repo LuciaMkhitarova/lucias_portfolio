@@ -50,22 +50,21 @@
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
-    padding: 40px;
+    padding: 3vw;
     //transition: margin-right .5s;
     // overflow:hidden;
     // width:100%;
-    min-height: 90vh;
-    width: 100vw;
+    min-height: 100%;
+    // width: 100vw;
 }
-body {
-  // overflow-x: hidden;
-}
+
 
 /* Add a background color to the top navigation */
 .topnav {
   background-color: rgba(0,0,0,0);
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
+  position: fixed;
 }
 
 /* Style the links inside the navigation bar */
@@ -75,7 +74,8 @@ body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 20px 20px;
+    //padding: 20px 20px;
+    padding: 2.5vh 2.5vh;
     text-decoration: none;
     font-size: 17px;
     transition: 0.4s;

@@ -3,19 +3,17 @@
   font-size: 3em;
   font-family: 'Open Sans', 'sans-serif';
   float: right;
-  /* height: 5em; */
-  /* width: 5em; */
   overflow: hidden;
   font-weight: lighter;
-  padding: .35em;
+  padding: 1.6vh;
   color: black;
   transition: .5s ease;
+  // height: 3vh;
+  // width: 3vh;
+  @media (max-width: 700px) {
+    font-size: 2.8em;
+  }
   &:hover {
     color: rgba(0, 0, 0, 0.4);
   }
-}
-
-
-.contact-button {
-
 }
