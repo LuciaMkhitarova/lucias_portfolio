@@ -47,24 +47,13 @@
   }
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 3vw;
-    //transition: margin-right .5s;
-    // overflow:hidden;
-    // width:100%;
-    min-height: 100%;
-    // width: 100vw;
-}
-
 
 /* Add a background color to the top navigation */
 .topnav {
   background-color: rgba(0,0,0,0);
   overflow: hidden;
-  width: 100%;
-  position: fixed;
+  // width: 100%;
+  // position: fixed;
 }
 
 /* Style the links inside the navigation bar */

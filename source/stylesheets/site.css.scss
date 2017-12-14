@@ -7,7 +7,12 @@
 @import 'keyframes.scss';
 @import 'footer.scss';
 
-html { font-size: 100%; }
+html {
+  font-size: 100%;
+  @media (max-width: 700px) {
+    font-size: 80%;
+  }
+}
 
 body {
   background-color: #FFE9F1;
@@ -17,6 +22,17 @@ body {
   font-size: 0.75em;
   height: 100vh;
   margin: 0;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 3vw;
+    //transition: margin-right .5s;
+    overflow:hidden;
+    // width:100%;
+    min-height: 80vh;
+    // width: 100vw;
 }
 
 a {
