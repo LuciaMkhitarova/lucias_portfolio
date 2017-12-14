@@ -6,7 +6,16 @@
 
   <%= tag :img, :src => "/images/Lucia2.JPG", :class => "avatar" %>
 
-  <p>I changed my career and gratuated from the Le Wagon coding bootcamp. Le Wagon is a 9-week full-stack web development bootcamp, teaching students a multitude of developer skill. During Le Wagon, I created two complete web applications in a team of three. I was  particularly attracted by the design of the applications, working primary on the front-end code for them. My strength is that I can understand the back-end and front-end of the applications, which, combined with my previous marketing experience, gives me a strong understanding of users' needs and how to meet them. Here is a summary of what I've learned at Le Wagon: </p>
-  <p> Ruby | Rails & Middleman frameworks | Object Oriented Programming | Databases & SQL | HTML5 & CSS3 | Bootstrap library | git | command line | Deployment & Heroku | Sketch | Collaboration with other developers </p>
+  <p>In 2017, I changed my career and gratuated from the Le Wagon coding bootcamp. <a href="https://www.lewagon.com/">Le Wagon</a> is a 9-week full-stack web development bootcamp, teaching students a multitude of developer skill. During Le Wagon, I created two complete web applications in a team of three. I was  particularly attracted by the design of the applications, working primary on the front-end code for them. My strength is my knowledge of both the back-end and front-end of the applications, which, combined with my previous marketing experience, gives me a strong understanding of users' needs and how to meet them.</p>
+
+  <p class="bold skills-summary">Here is a summary of what I've learned at Le Wagon: </p>
+    <% skills = ["Ruby", "Rails & Middleman frameworks", "Object Oriented Programming", "Databases & SQL", "HTML5 & CSS3", "Bootstrap library", "git", "command line", "Deployment & Heroku", "Sketch", "Collaboration with other developers"] %>
+  <div class="skills-list">
+    <% skills.each do |x| %>
+      <div class="skills">
+        <i class="fa fa-angle-right" aria-hidden="true"></i><%= " #{x}" %>
+      </div>
+    <% end %>
+  </div>
 </div>
 
