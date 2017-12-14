@@ -7,8 +7,15 @@
   }
 }
 
+.project-mini-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .project-item {
   text-align: center;
+  margin-top: 7em;
 }
 
 .project-card {
@@ -37,4 +44,16 @@
   &:hover img {
     transform: scale(1.15);
   }
+}
+
+.text-rotate {
+  font-family: 'Open Sans', 'sans-serif';
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
 }

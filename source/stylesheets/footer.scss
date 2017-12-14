@@ -5,10 +5,11 @@
   justify-content: space-around;
   align-items: flex-start;
   background: white;
+  width: 100vw;
   i {
     font-size: x-large;
-    //color: black;
-    color: #f74a89;
+    color: #333;
+    //color: #f74a89;
     transition: 0.7s ease;
     -webkit-text-stroke: 0.3px white;
     &:hover {

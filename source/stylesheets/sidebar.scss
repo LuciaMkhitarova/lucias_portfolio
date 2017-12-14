@@ -52,18 +52,20 @@
     transition: margin-left .5s;
     padding: 40px;
     //transition: margin-right .5s;
-    overflow:hidden;
+    // overflow:hidden;
     // width:100%;
     min-height: 90vh;
+    width: 100vw;
 }
 body {
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 /* Add a background color to the top navigation */
 .topnav {
   background-color: rgba(0,0,0,0);
   overflow: hidden;
+  width: 100vw;
 }
 
 /* Style the links inside the navigation bar */
