@@ -1,13 +1,18 @@
 .home-button a {
   background-color: white;
-  font-size: 3em;
+  // font-size: 3em;
   font-family: 'Open Sans', 'sans-serif';
   float: right;
   overflow: hidden;
   font-weight: lighter;
-  padding: 1.6vh;
   color: black;
   transition: .5s ease;
+  font-size: 3em;
+  padding: 1.6vh;
+  p {
+  font-size: 2em;
+
+  }
   // height: 3vh;
   // width: 3vh;
   @media (max-width: 700px) {
