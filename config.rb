@@ -15,13 +15,13 @@ page '/*.txt', layout: false
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
-set :images_dir, 'assets/images'''
+set :images_dir, 'assets/images'
 
-activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.branch = 'master'
-  deploy.build_before = true
-end
+# activate :deploy do |deploy|
+#   deploy.method = :git
+#   deploy.branch = 'master'
+#   deploy.build_before = true
+# end
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
