@@ -13,10 +13,6 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-set :css_dir, 'assets/stylesheets'
-set :js_dir, 'assets/javascripts'
-set :images_dir, 'assets/images'
-
 # activate :deploy do |deploy|
 #   deploy.method = :git
 #   deploy.branch = 'master'
