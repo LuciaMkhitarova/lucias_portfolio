@@ -36,7 +36,8 @@
   display: flex;
   justify-content: space-between;
   @media (max-width: 700px) {
-    font-size: 90%;
+    text-align: left;
+    font-size: 80%;
     margin: 0;
     margin-bottom: 5vh;
   }
@@ -47,6 +48,7 @@
   font-weight: 300;
   font-family: 'Open Sans', 'sans-serif';
   margin: 0;
+  margin-right: 2vh;
 }
 
 .skills-summary {
